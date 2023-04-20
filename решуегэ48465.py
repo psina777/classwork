@@ -7,7 +7,7 @@ for i in range(len(a)):
 # пары
 ans = []
 for i in range(len(a) - 1):
-    if ((abs(a[i]) % 10 == 6) and (abs(a[i + 1]) % 10 != 6) or (abs(a[i]) % 10 != 6 and (abs(a[i + 1]) % 10 == 6)) and ((a[i] ** 2 + a[i + 1] ** 2) < min6 ** 2)):
+    if ((abs(a[i]) % 10 == 6 and (abs(a[i + 1])) % 10 != 6) or ((abs(a[i])) % 10 != 6 and abs((a[i + 1])) % 10 == 6)) and ((a[i] ** 2 + a[i + 1] ** 2) < min6 ** 2):
         ans.append(a[i] ** 2 + a[i + 1] ** 2)
 print(len(ans), max(ans))
-#неверно
+
